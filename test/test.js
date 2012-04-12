@@ -20,7 +20,7 @@ var attribute = new v3.Attribute({
   , size: 32 * 4
   , location: -1
 });
-
+attribute.setIndex(context, program, 1);
 // v_shader.destroy(context);
 // f_shader.destroy(context);
 

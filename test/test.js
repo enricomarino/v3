@@ -14,6 +14,12 @@ var program = new v3.Program(context, {
     vertex: v_shader
   , fragment: f_shader
 });
+var attribute = new v3.Attribute({
+    name: 'a_position'
+  , type: context.FLOAT_VEC4
+  , size: 32 * 4
+  , location: -1
+});
 
 // v_shader.destroy(context);
 // f_shader.destroy(context);
@@ -22,3 +28,4 @@ console.log(context);
 console.log(v_shader);
 console.log(f_shader);
 console.log(program);
+console.log(attribute);

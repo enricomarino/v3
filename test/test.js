@@ -23,9 +23,16 @@ var attribute = new v3.Attribute({
 attribute.setIndex(context, program, 1);
 // v_shader.destroy(context);
 // f_shader.destroy(context);
+var uniform = new v3.Uniform(context, {
+    name: 'a_position'
+  , type: context.FLOAT_VEC4
+  , size: 32 * 4
+  , location: -1
+})
 
 console.log(context);
 console.log(v_shader);
 console.log(f_shader);
 console.log(program);
 console.log(attribute);
+console.log(uniform);

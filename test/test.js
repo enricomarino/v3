@@ -11,5 +11,9 @@ var f_shader = v3.Shader.create(context, {
   , source: v3.Shader.defaults.fragment
 });
 
+v_shader.destroy(context);
+f_shader.destroy(context);
+
+console.log(context);
 console.log(v_shader);
 console.log(f_shader);

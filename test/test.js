@@ -37,6 +37,7 @@ var model = new v3.Model(context, {
 
 model.bindVertices(context, program);
 model.bindColors(context, program);
+model.draw(context);
 
 console.log(context);
 console.log(v_shader);
